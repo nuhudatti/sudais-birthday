@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="To My Grandson, Sudais – A Timeless Gift">
+  <meta property="og:description" content="A beautiful, timeless birthday tribute from Grandpa to Sudais. Designed to echo love across generations.">
+  <meta property="og:image" content="./img/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com/sudais-birthday">
+   <meta name="twitter:card" content="summary_large_image">
+
+  <title>To My Grandson, Sudais – A Timeless Gift</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="./img/sudai_school.jpg" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #333;
+    }
+
+
+
+ header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+              url('./img/Buld_to_last.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+    header h1 {
+      font-size: 3.5rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .highlight {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1b5e20;
+    }
+
+    .quote {
+      background: #f9fbe7;
+      border-left: 6px solid #43a047;
+      padding: 20px;
+      margin: 30px 0;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      text-align: center;
+      background: #1b5e20;
+      color: white;
+      padding: 20px;
+    }
+
+    .typed-text {
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+     .glass-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .grandpa-msg {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5rem;
+      color: #5a189a;
+    }
+
+     .animate-fade-in {
+    animation: fadeIn 1.2s ease-out;
+  }
+  /* Sparkle Animation */
+.stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle 2s linear infinite;
+}
+
+/* Shooting Star */
+.shooting-star {
+  position: fixed;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  z-index: 10;
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: shoot 2s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes shoot {
+  0% {
+    top: -10%;
+    left: -20%;
+    opacity: 1;
+  }
+  100% {
+    top: 120%;
+    left: 120%;
+    opacity: 0;
+  }
+}
+
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+  .grandpa-msg {
+    font-size: 1.2rem;
+  }
+  .highlight {
+    font-size: 1.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+    <audio id="voice" src="./img/voiceover.mp3" preload="auto" playsinline></audio>
+    <div class="stars-bg" id="stars"></div>
+  <header>
+    <h1>From Grandpa to Sudais</h1>
+    <p><span id="typed"></span></p>
+  </header>
+
+   <section class="max-w-4xl mx-auto p-6 text-center" data-aos="fade-up">
+    <div class="glass-card">
+      <h2 class="text-3xl font-bold text-purple-700 mb-4">A Message From Grandpa</h2>
+      <p class="grandpa-msg">
+        "My dear grandson Sudais, on this beautiful day, I see in you the light of greatness. You are not just growing in age,
+        but rising in spirit. You’ve made our hearts full of joy, and your smile is our sunshine. May your days echo with
+        wisdom, your steps be steady with purpose, and your dreams reach far beyond the skies.
+        <br><br>
+        Remember, even the stars bow when a giant walks by. You, my boy, are one of them."
+        <br><br>
+        — With love, Grandpa 💙
+      </p>
+    </div>
+  </section>
+
+  <div class="section" data-aos="fade-down">
+    <h2 class="highlight">Happy Birthday, Sudais 🎂</h2>
+    <p>My beloved grandson, the world shines a bit brighter because you were born. You are growing into a light that will guide others. Like the book I gave you — <em>Rich Dad, Poor Dad</em> — may your thoughts grow rich, and your actions grow wiser. Let Amal, your sister, always find courage in your kindness.</p>
+
+    <div class="quote">
+       <p><span id="typed4"></span></p>
+    </div>
+
+    <p>Never stop dreaming, Sudais. And always remember: you are loved, guided, and destined for greatness.</p>
+
+    <h3 class="highlight">Legacy Echoes Forever</h3>
+    <p>This page is a legacy. It will echo across time as a message from a grandfather to a grandson — a bond stronger than time, deeper than words. Let this page remind you that greatness starts within.</p>
+  </div>
+
+   <!-- Moments Section -->
+  <section class="max-w-6xl mx-auto p-8 mt-16 text-center" data-aos="fade-up">
+    <h2 class="text-5xl font-bold text-green-700 mb-4">A Bond Beyond Words</h2>
+    <p class="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+      Celebrating Sudais — a son wrapped in love from Big Daddy and Big Mummy. These moments aren’t just photos; they’re treasures of warmth, joy, and pure love that echo forever.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <div class="space-y-3" data-aos="zoom-in">
+        <img src="./img/Sudais_Dad.jpg" alt="Sudais & Dad" class="rounded-2xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-2xl font-semibold text-gray-800">With Baban Daddy</h3>
+        <p class="text-gray-600">Every smile with him is a timeless memory.</p>
+      </div>
+      <div class="space-y-3" data-aos="zoom-in">
+        <img src="./img/Sudais_mum.jpg" alt="Sudais & Mum" class="rounded-2xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-2xl font-semibold text-gray-800">With Mum</h3>
+        <p class="text-gray-600">Wrapped in care, joy, and the strength of a mother’s love.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎂 Age Reveal Section -->
+<section class="py-12 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">How Old is Sudais Today?</h2>
+  <p class="mb-6 text-gray-700">Enter your birth year and let time speak your greatness.</p>
+  <input id="birthYear" type="number" placeholder="Enter Birth Year" class="px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-400" />
+  <button onclick="revealAge()" class="ml-3 px-6 py-2 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition">Reveal My Age</button>
+</section>
+
+<!-- 🌟 Popup Full Screen Message -->
+<div id="agePopup" class="fixed inset-0 bg-gradient-to-br from-green-100 to-white bg-opacity-95 flex items-center justify-center text-center hidden z-50">
+  <div class="max-w-xl p-8 bg-white shadow-2xl rounded-3xl border border-green-300 animate-fade-in">
+    <h1 id="ageMessage" class="text-4xl font-bold mb-4 text-green-700"></h1>
+    <p class="text-gray-800 text-lg">Another year of light, laughter, and becoming the legend you are meant to be. 🌟</p>
+    <button onclick="closePopup()" class="mt-6 px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Close</button>
+  </div>
+</div>
+
+<section class="bg-purple-100 py-10 mt-16 text-center">
+    <h3 class="text-3xl font-semibold text-purple-800 mb-4">Words to Remember 💫</h3>
+    <blockquote class="italic text-lg max-w-3xl mx-auto">
+      "You are not just a year older, Sudais. You are a year stronger, wiser, and even more capable of changing the world."
+    </blockquote>
+    <p><span id="typed2"></span></p>
+    <p><span id="typed3"></span></p>
+  </section>
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    <!-- AOS Scripts -->
+    AOS.init();
+  </script>
+  <script>
+    
+     window.addEventListener('load', () => {
+    const voice = document.getElementById('voice');
+
+    // Try to play immediately
+    voice.play().catch(() => {
+      // If blocked by browser (common on mobile), wait for user interaction
+      const unlockAudio = () => {
+        voice.play();
+        document.removeEventListener('click', unlockAudio);
+        document.removeEventListener('touchstart', unlockAudio);
+      };
+
+      document.addEventListener('click', unlockAudio);
+      document.addEventListener('touchstart', unlockAudio);
+    });
+  });
+    const typed = new Typed('#typed', {
+      strings: [
+        "A Gift of Love from Grandpa to Sudais.",
+        "Born to Inspire. Built to Last.",
+        "A Light That Will Echo Through Generations."
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+     const typed4 = new Typed('#typed4', {
+      strings: [
+        "To be born with a wise mind is rare. ",
+        "But to grow it with love and purpose that is a gift to the world.. Grandpa",
+        
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    const typed2 = new Typed('#typed2', {
+      strings: [
+         "✨ A legacy is not what we leave behind, but what we pass on through love. - Capt. S. Shaffi" ,
+      
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    const typed3 = new Typed('#typed3', {
+      strings: [
+         "&copy; 2025 – Built with 💚 by Grandpa, for Sudais. A voice that will echo till eternity." ,
+      
+      ],
+      typeSpeed: 120,
+      backSpeed: 50,
+      loop: true
+    });
+  function revealAge() {
+    const birthYear = document.getElementById('birthYear').value;
+    const popup = document.getElementById('agePopup');
+    const message = document.getElementById('ageMessage');
+    const currentYear = new Date().getFullYear();
+
+    if (!birthYear || birthYear > currentYear || birthYear < 1900) {
+      message.textContent = "Please enter a valid birth year 🙏";
+    } else {
+         
+
+      const age = currentYear - birthYear;
+      message.innerHTML = `🎉 Sudais is <span class="text-green-600">${age} years old</span> today!`;
+    }
+
+    popup.classList.remove("hidden");
+  }
+
+  function closePopup() {
+    document.getElementById('agePopup').classList.add("hidden");
+  }
+
+  // Sparkle generation
+const starsContainer = document.getElementById('stars');
+for (let i = 0; i < 50; i++) {
+  const star = document.createElement('div');
+  star.classList.add('star');
+  star.style.left = `${Math.random() * 100}%`;
+  star.style.top = `${Math.random() * 100}%`;
+  star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+  star.style.opacity = Math.random();
+  starsContainer.appendChild(star);
+}
+
+function launchShootingStar() {
+  const star = document.createElement('div');
+  star.classList.add('shooting-star');
+
+  // Random position and delay
+  const top = Math.random() * window.innerHeight * 0.5;
+  const left = Math.random() * window.innerWidth * 0.5;
+  star.style.top = `${top}px`;
+  star.style.left = `${left}px`;
+
+  document.body.appendChild(star);
+
+  // Remove after animation
+  setTimeout(() => {
+    star.remove();
+  }, 2200);
+}
+
+// Launch a shooting star every 2–4 seconds continuously
+setInterval(() => {
+  launchShootingStar();
+}, 2500);
+
+
+  </script>
+</body>
+
+</html>

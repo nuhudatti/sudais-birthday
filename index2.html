@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Sudais 🎉</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: radial-gradient(circle, #ffe4e6, #f0f8ff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1598514982625-2a03f95f6c5e');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      backdrop-filter: brightness(0.6);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .grandpa-msg {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5rem;
+      color: #5a189a;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <h1 class="text-5xl md:text-7xl font-bold typewriter">Happy Birthday, Sudais 🎂</h1>
+    <p class="mt-4 text-xl md:text-2xl font-light">From Grandpa, With Love</p>
+  </section>
+
+  <section class="max-w-4xl mx-auto p-6 text-center">
+    <div class="glass-card">
+      <h2 class="text-3xl font-bold text-purple-700 mb-4">A Message From Grandpa</h2>
+      <p class="grandpa-msg">
+        "My dear grandson Sudais, on this beautiful day, I see in you the light of greatness. You are not just growing in age,
+        but rising in spirit. You’ve made our hearts full of joy, and your smile is our sunshine. May your days echo with
+        wisdom, your steps be steady with purpose, and your dreams reach far beyond the skies.
+        <br><br>
+        Remember, even the stars bow when a giant walks by. You, my boy, are one of them."
+        <br><br>
+        — With love, Grandpa 💙
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto p-6 mt-12">
+    <h2 class="text-4xl font-bold text-center text-indigo-800 mb-6">Moments with Sudais & Amal</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1549194380-08b5110d6d3c" alt="Sudais Smile" class="rounded-xl shadow-lg">
+      <img src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d" alt="Sudais & Amal" class="rounded-xl shadow-lg">
+    </div>
+  </section>
+
+  <section class="bg-purple-100 py-10 mt-16 text-center">
+    <h3 class="text-3xl font-semibold text-purple-800 mb-4">Words to Remember 💫</h3>
+    <blockquote class="italic text-lg max-w-3xl mx-auto">
+      "You are not just a year older, Sudais. You are a year stronger, wiser, and even more capable of changing the world."
+    </blockquote>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6 text-center mt-16">
+    <p>&copy; 2025 From Grandpa to Sudais — A Legacy That Echoes Forever</p>
+  </footer>
+
+  <script>
+    // Optional: Background melody on click to unlock
+    const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+    audio.volume = 0.4;
+    window.addEventListener('click', () => {
+      audio.play();
+    }, { once: true });
+  </script>
+</body>
+
+</html>
